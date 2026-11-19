@@ -1,0 +1,183 @@
+.student-card {
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 16px;
+  padding: 22px;
+
+  min-width: 0;
+
+  box-shadow: 0 5px 20px rgba(31, 45, 61, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+/* Card Hover Effect */
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(31, 45, 61, 0.10);
+  border-color: #c7d2fe;
+}
+
+/* Card Top Section */
+.student-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Student Avatar */
+.student-avatar {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #4f46e5, #818cf8);
+  color: #ffffff;
+
+  border-radius: 15px;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+/* Student Status */
+.status-badge {
+  background: #dcfce7;
+  color: #15803d;
+
+  padding: 6px 12px;
+  border-radius: 30px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.status-badge.inactive {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Student Name */
+.student-card h3 {
+  color: #172033;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Roll Number */
+.student-roll {
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 6px 0 18px;
+}
+
+/* Student Details */
+.student-details {
+  border-top: 1px solid #e7eaf0;
+  padding-top: 12px;
+}
+
+.student-details p {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+
+  margin: 12px 0;
+  font-size: 12px;
+}
+
+.student-details span {
+  color: #7b8496;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.student-details strong {
+  color: #172033;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+/* Card Action Buttons */
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Common Button */
+.button {
+  flex: 1;
+  border: none;
+  border-radius: 9px;
+
+  padding: 11px 14px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Edit Button */
+.button-secondary {
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.button-secondary:hover {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+/* Delete Button */
+.button-danger {
+  background: #fff1f2;
+  color: #e11d48;
+}
+
+.button-danger:hover {
+  background: #e11d48;
+  color: #ffffff;
+}
+
+/* Primary Button */
+.button-primary {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.button-primary:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .student-card {
+    padding: 18px;
+  }
+
+  .student-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .student-card h3 {
+    font-size: 16px;
+  }
+
+  .card-actions {
+    gap: 8px;
+  }
+}
